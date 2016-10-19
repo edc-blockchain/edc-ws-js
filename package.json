@@ -1,6 +1,6 @@
 {
-  "name": "graphenejs-ws",
-  "version": "0.1.7",
+  "name": "edinar-ws-js",
+  "version": "0.1.1",
   "description": "Pure JavaScript Bitshares/Graphene websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
@@ -10,16 +10,16 @@
     "test:watch": "npm test -- --watch",
     "clean": "rm -rf ./dist/* & rm -rf ./build/*",
     "prebuild": "npm run clean",
-    "build": "babel lib --presets babel-preset-es2015 --out-dir dist",
+    "build": "babel lib --out-dir dist",
     "postbuild": "npm run browserify",
     "prepublish": "npm run build",
-    "browserify": "browserify dist/src/ApiInstances.js --standalone grapheneWS -o build/graphenejs-ws.js -d",
-    "postbrowserify": "uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/graphenejs-ws.min.js -- build/graphenejs-ws.js",
+    "browserify": "browserify dist/src/ApiInstances.js --standalone grapheneWS -o build/edinar-ws-js.js -d",
+    "postbrowserify": "uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/edinar-ws-js.min.js -- build/edinar-ws-js.js",
     "bundle": "npm run browserify && npm run minify"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svk31/graphenejs-ws.git"
+    "url": "git+https://github.com/edinar-developer/edinar-ws-js.git"
   },
   "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
   "contributors": [
@@ -27,7 +27,7 @@
   ],
   "license": "BSD-2-Clause-FreeBSD",
   "bugs": {
-    "url": "https://github.com/svk31/graphenejs-ws/issues"
+    "url": "https://github.com/edinar-developer/edinar-ws-js/issues"
   },
   "engines": {
     "node": ">= 6.0.0"
