@@ -1,6 +1,6 @@
 {
 	"name": "edinar-ws-js",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Pure JavaScript Bitshares/Graphene websocket interface for node.js and browsers.",
 	"browser": {
 		"ws": false
@@ -10,7 +10,7 @@
 		"test:watch": "npm test -- --watch",
 		"clean": "rm -rf ./dist/* & rm -rf ./build/*",
 		"prebuild": "npm run clean",
-		"build": "babel lib --out-dir dist",
+		"build": "babel lib --presets babel-preset-es2015 --out-dir dist",
 		"postbuild": "npm run browserify",
 		"prepublish": "npm run build",
 		"browserify": "browserify dist/src/ApiInstances.js --standalone grapheneWS -o build/edinar-ws-js.js -d",
