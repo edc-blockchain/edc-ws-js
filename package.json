@@ -1,6 +1,6 @@
 {
 	"name": "edinar-ws-js",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "Pure JavaScript Bitshares/Graphene websocket interface for node.js and browsers.",
 	"browser": {
 		"ws": false
@@ -35,6 +35,7 @@
 	"main": "./dist/index.js",
 	"dependencies": {
 		"ReconnectingWebSocket": "git+https://github.com/svk31/reconnecting-websocket.git",
+		"nan": "^2.8.0",
 		"ws": "^1.1.4"
 	},
 	"devDependencies": {
