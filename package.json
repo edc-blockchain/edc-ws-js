@@ -1,7 +1,7 @@
 {
-	"name": "edinarcoin-ws",
-	"version": "0.1.18",
-	"description": "Pure JavaScript Bitshares/Graphene websocket interface for node.js and browsers.",
+	"name": "edc-ws-js",
+	"version": "0.2.0",
+	"description": "Pure JavaScript Bitshares/Graphene websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
 	},
@@ -13,21 +13,22 @@
 		"build": "babel lib --presets babel-preset-es2015 --out-dir dist",
 		"postbuild": "npm run browserify",
 		"prepublish": "npm run build",
-		"browserify": "browserify dist/src/ApiInstances.js --standalone grapheneWS -o build/edinarcoin-ws.js -d",
-		"postbrowserify": "uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/edinarcoin-ws.min.js -- build/edinarcoin-ws.js",
+		"browserify": "browserify dist/src/ApiInstances.js --standalone grapheneWS -o build/edc-ws.js -d",
+		"postbrowserify": "uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/edc-ws.min.js -- build/edc-ws.js",
 		"bundle": "npm run browserify && npm run minify"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/e-dinar/edinarcoin-ws-js.git"
+		"url": "git+https://github.com/edc-blockchain/edc-ws-js.git"
 	},
 	"author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
 	"contributors": [
-		"James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)"
+		"James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
+		"Vladimir Kudelin <kudelin@gmail.com>"
 	],
 	"license": "BSD-2-Clause-FreeBSD",
 	"bugs": {
-		"url": "https://github.com/e-dinar/edinarcoin-ws-js/issues"
+		"url": "https://github.com/edc-blockchain/edc-ws-js/issues"
 	},
 	"engines": {
 		"node": ">= 6.0.0"
