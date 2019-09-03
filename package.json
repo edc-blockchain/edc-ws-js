@@ -1,6 +1,6 @@
 {
 	"name": "edc-ws-js",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"description": "Pure JavaScript Bitshares/Graphene websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
@@ -35,7 +35,7 @@
 	},
 	"main": "./dist/index.js",
 	"dependencies": {
-		"ReconnectingWebSocket": "git+ssh://git@github.com/joewalnes/reconnecting-websocket.git",
+		"ReconnectingWebSocket": "git+https://github.com/joewalnes/reconnecting-websocket.git",
 		"nan": "^2.12.1",
 		"ws": "^7.1.2"
 	},
