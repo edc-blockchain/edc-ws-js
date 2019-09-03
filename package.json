@@ -1,6 +1,6 @@
 {
 	"name": "edc-ws-js",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Pure JavaScript Bitshares/Graphene websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
@@ -35,12 +35,12 @@
 	},
 	"main": "./dist/index.js",
 	"dependencies": {
-		"ReconnectingWebSocket": "git+https://github.com/svk31/reconnecting-websocket.git",
+		"ReconnectingWebSocket": "git+ssh://git@github.com/joewalnes/reconnecting-websocket.git",
 		"nan": "^2.12.1",
-		"ws": "^1.1.5"
+		"ws": "^7.1.2"
 	},
 	"devDependencies": {
-		"assert": "^1.3.0",
+		"assert": "^2.0.0",
 		"babel-cli": "^6.26.0",
 		"babel-plugin-transform-decorators-legacy": "^1.3.5",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -49,8 +49,8 @@
 		"babel-preset-es2017": "^6.24.1",
 		"babel-preset-react": "^6.24.1",
 		"babel-runtime": "^6.26.0",
-		"browserify": "^16.2.3",
-		"mocha": "^2.3.4",
+		"browserify": "^16.5.0",
+		"mocha": "^6.2.0",
 		"uglifyjs": "^2.4.10"
 	}
 }
