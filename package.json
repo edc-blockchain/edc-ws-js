@@ -1,6 +1,6 @@
 {
 	"name": "edc-ws-js",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "Pure JavaScript Bitshares/Graphene websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
