@@ -1,7 +1,7 @@
 {
 	"name": "edc-ws-js",
-	"version": "0.2.5",
-	"description": "Pure JavaScript Bitshares/Graphene websocket interface for Node.js and browsers.",
+	"version": "0.3.0",
+	"description": "Pure JavaScript EDC Blockchain websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
 	},
@@ -37,7 +37,7 @@
 	"dependencies": {
 		"nan": "^2.12.1",
 		"robust-websocket": "^1.0.0",
-		"ws": "^7.1.2"
+		"ws": "^7.2.0"
 	},
 	"devDependencies": {
 		"assert": "^2.0.0",
@@ -50,7 +50,7 @@
 		"babel-preset-react": "^6.24.1",
 		"babel-runtime": "^6.26.0",
 		"browserify": "^16.5.0",
-		"mocha": "^6.2.0",
+		"mocha": "^6.2.2",
 		"uglifyjs": "^2.4.10"
 	}
 }
