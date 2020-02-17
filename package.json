@@ -1,6 +1,6 @@
 {
 	"name": "edc-ws-js",
-	"version": "0.4.1",
+	"version": "0.4.2",
 	"description": "Pure JavaScript EDC Blockchain websocket interface for Node.js and browsers.",
 	"browser": {
 		"ws": false
